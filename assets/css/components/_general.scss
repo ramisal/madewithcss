@@ -1,14 +1,24 @@
+/****************/
+/***** main *****/
+/****************/
+
+.main-container{
+	min-height: 100vh;
+	padding: 180px 60px;
+	position: relative;
+}
+
+
+
 /*******************/
 /***** landing *****/
 /*******************/
-/*******************/
 
-.landing-section{
-	padding: 60px;
-	height: 60vh;
+.landing-section {
+	margin: 0 0 90px;
 }
 
-.landing-text{
+.landing-text {
 	line-height: 1;
 	text-align: center;
 	h1{
@@ -18,6 +28,61 @@
 	p{
 		margin: 5px 0 0;
 		color: $gray;
+	}
+}
+
+
+
+/*******************/
+/***** landing *****/
+/*******************/
+.footer {
+	position: absolute;
+	left: 50%;
+	bottom: 90px;
+	transform: translate(-50%, 50%);
+	color: $gray;
+	p {
+		margin: 0;
+	}
+	a {
+		@include transition();
+		&:hover {
+			color: $gray_dark;
+		}
+	}
+}
+
+
+
+/**********************/
+/***** experiment *****/
+/**********************/
+.experiment {
+	padding: 60px 0;
+
+	&__header {
+		margin: 0 0 30px;
+		text-align: center;		
+		p {
+			margin: 0;
+			color: $gray;
+		}
+		h3 {
+			margin: 0;
+		}
+	}
+
+	&__board {
+		max-width: $experiment_width_regular;
+		margin: auto;
+
+		&--medium {
+			max-width: $experiment_width_medium;
+		}
+		&--small {
+			max-width: $experiment_width_small;
+		}
 	}
 }
 

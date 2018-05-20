@@ -36,6 +36,9 @@ ul {
   padding: 0;
   list-style: none; }
 
+img {
+  max-width: 100%; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Serif Pro", serif; }
 
@@ -114,13 +117,19 @@ h6 {
     flex-wrap: wrap; }
 
 /***** components *****/
+/****************/
+/***** main *****/
+/****************/
+.main-container {
+  min-height: 100vh;
+  padding: 180px 60px;
+  position: relative; }
+
 /*******************/
 /***** landing *****/
 /*******************/
-/*******************/
 .landing-section {
-  padding: 60px;
-  height: 50vh; }
+  margin: 0 0 90px; }
 
 .landing-text {
   line-height: 1;
@@ -131,3 +140,84 @@ h6 {
   .landing-text p {
     margin: 5px 0 0;
     color: #999999; }
+
+/*******************/
+/***** landing *****/
+/*******************/
+.footer {
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  transform: translate(-50%, 50%);
+  color: #999999; }
+  .footer p {
+    margin: 0; }
+  .footer a {
+    transition: all 0.3s ease-in-out; }
+    .footer a:hover {
+      color: #4d4d4d; }
+
+/**********************/
+/***** experiment *****/
+/**********************/
+.experiment {
+  padding: 60px 0; }
+  .experiment__header {
+    margin: 0 0 30px;
+    text-align: center; }
+    .experiment__header p {
+      margin: 0;
+      color: #999999; }
+    .experiment__header h3 {
+      margin: 0; }
+  .experiment__board {
+    max-width: 1000px;
+    margin: auto; }
+    .experiment__board--medium {
+      max-width: 750px; }
+    .experiment__board--small {
+      max-width: 500px; }
+
+/************************/
+/***** hover effect *****/
+/************************/
+.hover-box {
+  perspective: 2000px; }
+  .hover-box--sensor {
+    width: calc(100%/3);
+    height: calc(100%/3);
+    position: absolute;
+    z-index: 10; }
+    .hover-box--sensor:nth-child(n+4) {
+      top: calc(100%/3); }
+    .hover-box--sensor:nth-child(n+7) {
+      top: calc(100%/3*2); }
+    .hover-box--sensor:nth-child(3n+2) {
+      left: calc(100%/3); }
+    .hover-box--sensor:nth-child(3n+3) {
+      left: calc(100%/3*2); }
+    .hover-box--sensor:hover:nth-child(1) ~ .hover-box--base {
+      transform: rotate3d(-1, 1, 0, -15deg); }
+    .hover-box--sensor:hover:nth-child(2) ~ .hover-box--base {
+      transform: rotate3d(1, 0, 0, 15deg); }
+    .hover-box--sensor:hover:nth-child(3) ~ .hover-box--base {
+      transform: rotate3d(1, 1, 0, 15deg); }
+    .hover-box--sensor:hover:nth-child(4) ~ .hover-box--base {
+      transform: rotate3d(0, 1, 0, -15deg); }
+    .hover-box--sensor:hover:nth-child(6) ~ .hover-box--base {
+      transform: rotate3d(0, 1, 0, 15deg); }
+    .hover-box--sensor:hover:nth-child(7) ~ .hover-box--base {
+      transform: rotate3d(-1, -1, 0, 15deg); }
+    .hover-box--sensor:hover:nth-child(8) ~ .hover-box--base {
+      transform: rotate3d(1, 0, 0, -15deg); }
+    .hover-box--sensor:hover:nth-child(9) ~ .hover-box--base {
+      transform: rotate3d(1, -1, 0, -15deg); }
+  .hover-box--base {
+    padding: 30px;
+    transition: all 1.5s ease-in-out; }
+    .hover-box--base a {
+      display: block; }
+    .hover-box--base img {
+      display: block;
+      border-radius: 5px;
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
