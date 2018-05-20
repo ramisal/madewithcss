@@ -1,0 +1,23 @@
+/*******************/
+/***** landing *****/
+/*******************/
+/*******************/
+
+.landing-section{
+	padding: 60px;
+	height: 50vh;
+}
+
+.landing-text{
+	line-height: 1;
+	text-align: center;
+	h1{
+		margin: 0;
+		text-transform: uppercase;
+	}
+	p{
+		margin: 5px 0 0;
+		color: $gray;
+	}
+}
+
