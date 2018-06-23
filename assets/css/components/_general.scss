@@ -61,7 +61,7 @@
 .experiment {
 	padding: 60px 0;
 
-	&__header {
+	&--header {
 		margin: 0 0 30px;
 		text-align: center;		
 		p {
@@ -73,14 +73,14 @@
 		}
 	}
 
-	&__board {
+	&--board {
 		max-width: $experiment_width_regular;
 		margin: auto;
 
-		&--medium {
+		&__medium {
 			max-width: $experiment_width_medium;
 		}
-		&--small {
+		&__small {
 			max-width: $experiment_width_small;
 		}
 	}

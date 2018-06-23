@@ -103,17 +103,17 @@ h6 {
   align-items: center; }
   .flex > * {
     min-width: 0; }
-  .flex.flex--center {
+  .flex__center {
     justify-content: center; }
-  .flex.flex--end {
+  .flex__end {
     justify-content: flex-end; }
-  .flex.flex--start {
+  .flex__start {
     justify-content: flex-start; }
-  .flex.flex--top {
+  .flex__top {
     align-items: flex-start; }
-  .flex.flex--bottom {
+  .flex__bottom {
     align-items: flex-end; }
-  .flex.flex--wrap {
+  .flex__wrap {
     flex-wrap: wrap; }
 
 /***** components *****/
@@ -162,20 +162,20 @@ h6 {
 /**********************/
 .experiment {
   padding: 60px 0; }
-  .experiment__header {
+  .experiment--header {
     margin: 0 0 30px;
     text-align: center; }
-    .experiment__header p {
+    .experiment--header p {
       margin: 0;
       color: #999999; }
-    .experiment__header h3 {
+    .experiment--header h3 {
       margin: 0; }
-  .experiment__board {
+  .experiment--board {
     max-width: 1000px;
     margin: auto; }
-    .experiment__board--medium {
+    .experiment--board__medium {
       max-width: 750px; }
-    .experiment__board--small {
+    .experiment--board__small {
       max-width: 500px; }
 
 /************************/

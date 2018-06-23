@@ -46,22 +46,22 @@
 	& > *{
 		min-width: 0;
 	}
-	&.flex--center {
+	&__center {
 		justify-content: center;
 	}
-	&.flex--end {
+	&__end {
 		justify-content: flex-end;
 	}
-	&.flex--start {
+	&__start {
 		justify-content: flex-start;
 	}
-	&.flex--top {
+	&__top {
 		align-items: flex-start;
 	}
-	&.flex--bottom {
+	&__bottom {
 		align-items: flex-end;
 	}
-	&.flex--wrap {
+	&__wrap {
 		flex-wrap: wrap;
 	}
 }
