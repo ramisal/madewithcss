@@ -67,13 +67,15 @@
   &--base{
     padding: 30px;
     @include transition(1.5s);
-    a {
-      display: block;
-    }
-    img {
-      display: block;
-      border-radius: 5px;
-      box-shadow: 0 0 10px 1px rgba(#000,0.3);
-    }
+  }
+  &--image{
+    padding: 116.2% 0 0;
+    background-color: #423127;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(https://source.unsplash.com/NTyBbu66_SI/500x581);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgba(#000,0.3);
   }
 }
