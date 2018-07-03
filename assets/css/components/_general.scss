@@ -34,7 +34,7 @@
 
 
 /*******************/
-/***** landing *****/
+/***** footer *****/
 /*******************/
 .footer {
 	position: absolute;
@@ -86,3 +86,14 @@
 	}
 }
 
+
+
+/**************************/
+/***** unsplash badge *****/
+/**************************/
+.unsplash-badge {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	z-index: 100;
+}

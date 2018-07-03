@@ -142,7 +142,7 @@ h6 {
     color: #999999; }
 
 /*******************/
-/***** landing *****/
+/***** footer *****/
 /*******************/
 .footer {
   position: absolute;
@@ -178,6 +178,15 @@ h6 {
     .experiment--board__small {
       max-width: 500px; }
 
+/**************************/
+/***** unsplash badge *****/
+/**************************/
+.unsplash-badge {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100; }
+
 /************************/
 /***** hover effect *****/
 /************************/
@@ -196,22 +205,40 @@ h6 {
       left: calc(100%/3); }
     .hover-box--sensor:nth-child(3n+3) {
       left: calc(100%/3*2); }
-    .hover-box--sensor:hover:nth-child(1) ~ .hover-box--base {
+    .hover-box--sensor:hover:nth-child(1) ~ .hover-box--base,
+    .hover-box--sensor:hover:nth-child(1) ~ .hover-box--unsplash-badge {
       transform: rotate3d(-1, 1, 0, -15deg); }
-    .hover-box--sensor:hover:nth-child(2) ~ .hover-box--base {
+    .hover-box--sensor:hover:nth-child(2) ~ .hover-box--base,
+    .hover-box--sensor:hover:nth-child(2) ~ .hover-box--unsplash-badge {
       transform: rotate3d(1, 0, 0, 15deg); }
-    .hover-box--sensor:hover:nth-child(3) ~ .hover-box--base {
+    .hover-box--sensor:hover:nth-child(3) ~ .hover-box--base,
+    .hover-box--sensor:hover:nth-child(3) ~ .hover-box--unsplash-badge {
       transform: rotate3d(1, 1, 0, 15deg); }
-    .hover-box--sensor:hover:nth-child(4) ~ .hover-box--base {
+    .hover-box--sensor:hover:nth-child(4) ~ .hover-box--base,
+    .hover-box--sensor:hover:nth-child(4) ~ .hover-box--unsplash-badge {
       transform: rotate3d(0, 1, 0, -15deg); }
-    .hover-box--sensor:hover:nth-child(6) ~ .hover-box--base {
+    .hover-box--sensor:hover:nth-child(6) ~ .hover-box--base,
+    .hover-box--sensor:hover:nth-child(6) ~ .hover-box--unsplash-badge {
       transform: rotate3d(0, 1, 0, 15deg); }
-    .hover-box--sensor:hover:nth-child(7) ~ .hover-box--base {
+    .hover-box--sensor:hover:nth-child(7) ~ .hover-box--base,
+    .hover-box--sensor:hover:nth-child(7) ~ .hover-box--unsplash-badge {
       transform: rotate3d(-1, -1, 0, 15deg); }
-    .hover-box--sensor:hover:nth-child(8) ~ .hover-box--base {
+    .hover-box--sensor:hover:nth-child(8) ~ .hover-box--base,
+    .hover-box--sensor:hover:nth-child(8) ~ .hover-box--unsplash-badge {
       transform: rotate3d(1, 0, 0, -15deg); }
-    .hover-box--sensor:hover:nth-child(9) ~ .hover-box--base {
+    .hover-box--sensor:hover:nth-child(9) ~ .hover-box--base,
+    .hover-box--sensor:hover:nth-child(9) ~ .hover-box--unsplash-badge {
       transform: rotate3d(1, -1, 0, -15deg); }
+  .hover-box--unsplash-badge {
+    right: 50px;
+    bottom: 50px;
+    z-index: 150;
+    transform-origin: left top;
+    transition: all 1.5s ease-in-out; }
+    .hover-box--unsplash-badge:hover {
+      transform: rotate3d(1, -1, 0, -15deg); }
+      .hover-box--unsplash-badge:hover ~ .hover-box--base {
+        transform: rotate3d(1, -1, 0, -15deg); }
   .hover-box--base {
     padding: 30px;
     transition: all 1.5s ease-in-out; }
