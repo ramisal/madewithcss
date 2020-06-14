@@ -2,98 +2,90 @@
 /***** main *****/
 /****************/
 
-.main-container{
-	min-height: 100vh;
-	padding: 180px 60px;
-	position: relative;
+.main-container {
+  min-height: 100vh;
+  padding: 180px 60px;
+  position: relative;
 }
-
-
 
 /*******************/
 /***** landing *****/
 /*******************/
 
 .landing-section {
-	margin: 0 0 90px;
+  margin: 0 0 90px;
 }
 
 .landing-text {
-	line-height: 1;
-	text-align: center;
-	h1{
-		margin: 0;
-		text-transform: uppercase;
-	}
-	p{
-		margin: 5px 0 0;
-		color: $gray;
-	}
+  line-height: 1;
+  text-align: center;
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 5px 0 0;
+    color: $gray;
+  }
 }
-
-
 
 /*******************/
 /***** footer *****/
 /*******************/
 .footer {
-	position: absolute;
-	left: 50%;
-	bottom: 90px;
-	transform: translate(-50%, 50%);
-	color: $gray;
-	p {
-		margin: 0;
-	}
-	a {
-		@include transition();
-		&:hover {
-			color: $gray_dark;
-		}
-	}
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  transform: translate(-50%, 50%);
+  color: $gray;
+  p {
+    margin: 0;
+  }
+  a {
+    @include transition();
+    &:hover {
+      color: $gray_dark;
+    }
+  }
 }
-
-
 
 /**********************/
 /***** experiment *****/
 /**********************/
 .experiment {
-	padding: 60px 0;
+  padding: 60px 0;
 
-	&--header {
-		margin: 0 0 30px;
-		text-align: center;		
-		p {
-			margin: 0;
-			color: $gray;
-		}
-		h3 {
-			margin: 0;
-		}
-	}
+  &--header {
+    margin: 0 0 30px;
+    text-align: center;
+    p {
+      margin: 0;
+      color: $gray;
+    }
+    h3 {
+      margin: 0;
+    }
+  }
 
-	&--board {
-		max-width: $experiment_width_regular;
-		margin: auto;
+  &--board {
+    max-width: $experiment_width_regular;
+    margin: auto;
 
-		&__medium {
-			max-width: $experiment_width_medium;
-		}
-		&__small {
-			max-width: $experiment_width_small;
-		}
-	}
+    &__medium {
+      max-width: $experiment_width_medium;
+    }
+    &__small {
+      max-width: $experiment_width_small;
+    }
+  }
 }
-
-
 
 /**************************/
 /***** unsplash badge *****/
 /**************************/
 .unsplash-badge {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-	z-index: 100;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
 }

@@ -1,0 +1,17 @@
+{
+  "name": "madewithcss",
+  "version": "1.0.0",
+  "description": "a collection of experiments made exclusively in css",
+  "main": "index.html",
+  "repository": "git@github.com:ramisal/madewithcss.git",
+  "author": "ramisal",
+  "license": "MIT",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-sass": "^4.1.0"
+  }
+}

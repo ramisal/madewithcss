@@ -1,0 +1,105 @@
+/************************/
+/***** frost effect *****/
+/************************/
+
+$bg_color: #2e3e3e;
+
+.frost-board {
+  max-width: 100%;
+  &--holder {
+    padding: calc(2 / 3 * 100%) 0 0;
+    position: relative;
+  }
+}
+
+.frost-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background: $inverse_color;
+  border-radius: 5px;
+  border: 10px $bg_color solid;
+  box-shadow: 0 5px 10px 1px rgba(#000, 0.3);
+  &--image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(https://source.unsplash.com/NRQV-hBF10M/750x500);
+    @include transition(1.5s);
+  }
+  &--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    h1 {
+      font-family: "Dokdo", cursive;
+      font-size: 128px;
+      line-height: 0.66;
+      color: transparent;
+      letter-spacing: -5px;
+      text-align: center;
+      background: url(https://source.unsplash.com/NRQV-hBF10M/750x500) center
+        center no-repeat;
+      background-clip: text;
+    }
+  }
+  &--toggle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    padding: 10px 10px 0 0;
+    background: $bg_color;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0 5px 0 0;
+    label {
+      display: block;
+      width: 132px;
+      padding: 0 15px;
+      font-size: 14px;
+      color: rgba(#fff, 0.7);
+      text-align: center;
+      border: 1px rgba(#fff, 0.2) solid;
+      border-radius: 5px;
+      cursor: pointer;
+      &:before {
+        content: "Add frost";
+      }
+    }
+  }
+  &--checkbox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    &:checked {
+      & ~ .frost-box--image {
+        filter: blur(20px);
+        opacity: 0.5;
+      }
+      & ~ .frost-box--toggle {
+        label:before {
+          content: "Remove frost";
+        }
+      }
+    }
+  }
+}
