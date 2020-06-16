@@ -58,6 +58,7 @@ $bg_color: #2e3e3e;
       background: url(https://source.unsplash.com/NRQV-hBF10M/750x500) center
         center no-repeat;
       background-clip: text;
+      -webkit-background-clip: text;
     }
   }
   &--toggle {
